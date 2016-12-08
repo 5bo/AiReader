@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bg"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/menuParts"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/txtreader_menu_bg_sel"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_txtreader_menu_progress"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="章节"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/menuTypeface"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/txtreader_menu_bg_sel"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_txtreader_menu_typeface"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="字体"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/menuTheme"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/txtreader_menu_bg_sel"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_txtreader_menu_theme"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="主题"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/menuLight"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/txtreader_menu_bg_sel"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_txtreader_menu_light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="亮度"
+        android:textColor="#FFF" />
+</LinearLayout>

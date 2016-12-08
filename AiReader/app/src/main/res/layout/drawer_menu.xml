@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdmb.ireader.widget.TranslucentStatusScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/widgetBackground"
+    android:scrollbars="none"
+    app:translucentStatusForeground="@color/translucent_status">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <ImageView
+                android:id="@+id/img_nav_top_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/layout_info"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_nav_header_bg" />
+
+            <View
+                android:id="@+id/drawerStatusBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drawerStatusBar"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/image_placeholder" />
+
+                <TextView
+                    android:id="@+id/tv_login_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    tools:text="TakWolf" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#b3ffffff"
+                    android:textSize="14sp"
+                    tools:text="积分：0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout_info"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_transparent_image"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="注销"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/btn_theme_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/layout_info"
+                android:layout_margin="16dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_transparent_image"
+                android:padding="16dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_skin_night" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/navOffline"
+            style="@style/AppWidget.NavigationItem"
+            android:drawableLeft="@drawable/ic_nav_download"
+            android:drawableStart="@drawable/ic_nav_download"
+            android:text="离线" />
+
+        <TextView
+            android:id="@+id/navSettings"
+            style="@style/AppWidget.NavigationItem"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_nav_settings"
+            android:drawableStart="@drawable/ic_nav_settings"
+            android:text="设置" />
+
+        <TextView
+            android:id="@+id/navMore"
+            style="@style/AppWidget.NavigationItem"
+            android:drawableLeft="@drawable/ic_nav_more"
+            android:drawableStart="@drawable/ic_nav_more"
+            android:text="更多" />
+        <TextView
+            android:id="@+id/navAbout"
+            style="@style/AppWidget.NavigationItem"
+            android:drawableLeft="@drawable/ic_nav_home"
+            android:drawableStart="@drawable/ic_nav_home"
+            android:text="关于我们" />
+    </LinearLayout>
+</com.hdmb.ireader.widget.TranslucentStatusScrollView>

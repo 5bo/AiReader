@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="A"
+            android:textColor="#FFF"
+            android:textSize="30px" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/ic_progress_drawable_white_green"
+            android:thumb="@drawable/ic_seekbar_thumb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="A"
+            android:textColor="#FFF"
+            android:textSize="60px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="字体"
+            android:textColor="@android:color/white" />
+
+        <RadioGroup
+            android:id="@+id/typefaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/typeface0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/txttextmenu_radiobutton_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="默认字体"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/typeface1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/txttextmenu_radiobutton_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="新宋体"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/typeface2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/txttextmenu_radiobutton_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="娃娃体"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/typeface3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/txttextmenu_radiobutton_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="隶书体"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

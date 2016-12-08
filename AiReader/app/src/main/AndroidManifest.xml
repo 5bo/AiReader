@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hdmb.ireader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--写入外部存储-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeLight">
+        <activity
+            android:name=".ui.activity.LauncherActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight.FitsStatusBar" />
+        <activity
+            android:name=".ui.activity.ApiTestUI"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight" />
+        <activity
+            android:name=".ui.activity.SearchArticleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight" />
+        <activity
+            android:name=".ui.activity.ArticleDirectoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight" />
+        <activity
+            android:name=".ui.activity.BookReaderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+        <activity
+            android:name=".ui.activity.PermissionsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 离线 -->
+        <activity
+            android:name=".ui.activity.OfflineActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 更多 -->
+        <activity
+            android:name=".ui.activity.MoreActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- Crash -->
+        <activity
+            android:name=".ui.activity.CrashActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Service -->
+        <service android:name=".service.OfflineService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bg"
+    android:orientation="horizontal"
+    android:weightSum="5" >
+
+    <RelativeLayout
+        android:id="@+id/theme1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/menu_bg_selector" >
+
+        <ImageView
+            android:id="@+id/themeBg1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#ffffff" />
+
+        <View
+            android:id="@+id/themeTag1"
+            android:layout_width="30dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/themeBg1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/theme2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/menu_bg_selector" >
+
+        <ImageView
+            android:id="@+id/themeBg2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/themeTag2"
+            android:layout_width="30dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/themeBg2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/theme3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/menu_bg_selector" >
+
+        <ImageView
+            android:id="@+id/themeBg3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#77000000" />
+
+        <View
+            android:id="@+id/themeTag3"
+            android:layout_width="30dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/themeBg3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/theme4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/menu_bg_selector" >
+
+        <ImageView
+            android:id="@+id/themeBg4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#00bcd4" />
+
+        <View
+            android:id="@+id/themeTag4"
+            android:layout_width="30dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/themeBg4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/theme5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/menu_bg_selector" >
+
+        <ImageView
+            android:id="@+id/themeBg5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#eeb422" />
+
+        <View
+            android:id="@+id/themeTag5"
+            android:layout_width="30dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/themeBg5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

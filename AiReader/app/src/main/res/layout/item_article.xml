@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/article"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/articlePic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/g8" />
+
+        <TextView
+            android:id="@+id/articleName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="《天涯百万富翁入门指南》"
+            android:textColor="#333"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/articleStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="状态:连载中"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/addBookshelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="4dp"
+            android:text="加入书架"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

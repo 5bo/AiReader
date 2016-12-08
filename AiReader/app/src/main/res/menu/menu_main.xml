@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="主页" />
+
+
+        <item
+            android:id="@+id/more"
+            android:icon="@drawable/ic_nav_more"
+            android:title="更多">
+            <menu>
+                <item
+                    android:id="@+id/drawer_favourite"
+                    android:icon="@drawable/ic_nav_download"
+                    android:title="离线缓存" />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/settings"
+            android:title="分组2">
+            <menu>
+                <item
+                    android:id="@+id/drawer_settings"
+                    android:icon="@drawable/ic_nav_settings"
+                    android:title="设置" />
+            </menu>
+        </item>
+    </group>
+</menu>
